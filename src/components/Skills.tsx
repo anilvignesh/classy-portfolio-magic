@@ -148,26 +148,6 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[
-            { label: "Years Experience", value: "8+" },
-            { label: "Projects Completed", value: "20+" },
-            { label: "Transaction Volume", value: "$100M+" },
-            { label: "Technology Stack", value: "5+" }
-          ].map((stat, index) => (
-            <div 
-              key={stat.label}
-              className={`glass-card p-6 text-center transition-all duration-500 ${
-                isVisible ? 'opacity-100' : 'opacity-0 translate-y-4'
-              }`}
-              style={{ transitionDelay: `${index * 150}ms` }}
-            >
-              <div className="text-3xl md:text-4xl font-bold text-violet-accent mb-2">{stat.value}</div>
-              <div className="text-white/70">{stat.label}</div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
