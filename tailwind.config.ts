@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,15 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                // Custom colors for our portfolio
+                violet: {
+                    dark: '#1A1F2C',
+                    medium: '#403E43',
+                    light: '#6E59A5',
+                    accent: '#9b87f5',
+                    highlight: '#D6BCFA'
+                }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +93,60 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                // Custom animations
+                'fade-in-up': {
+                    '0%': {
+                        opacity: '0',
+                        transform: 'translateY(20px)'
+                    },
+                    '100%': {
+                        opacity: '1',
+                        transform: 'translateY(0)'
+                    }
+                },
+                'fade-in': {
+                    '0%': {
+                        opacity: '0',
+                    },
+                    '100%': {
+                        opacity: '1',
+                    }
+                },
+                'pulse-slow': {
+                    '0%, 100%': {
+                        opacity: '1',
+                    },
+                    '50%': {
+                        opacity: '0.8',
+                    }
+                },
+                'float': {
+                    '0%, 100%': {
+                        transform: 'translateY(0)'
+                    },
+                    '50%': {
+                        transform: 'translateY(-10px)'
+                    }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
+                'fade-in': 'fade-in 0.8s ease-out forwards',
+                'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
+                'float': 'float 5s ease-in-out infinite'
+			},
+            fontFamily: {
+                sans: ['Poppins', 'sans-serif'],
+            },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                'gradient-violet': 'linear-gradient(90deg, #1A1F2C 0%, #403E43 50%, #1A1F2C 100%)',
+                'gradient-purple': 'linear-gradient(135deg, #6E59A5 0%, #9b87f5 100%)',
+                'hero-pattern': 'url("/hero-bg.svg")',
+            }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
