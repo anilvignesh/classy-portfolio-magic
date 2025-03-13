@@ -16,7 +16,7 @@
     --popover: 260 15% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 255 70% 75%;
+    --primary: 240 98% 21%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 260 20% 25%;
@@ -25,7 +25,7 @@
     --muted: 260 10% 25%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 265 70% 60%;
+    --accent: 240 98% 42%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
@@ -33,7 +33,7 @@
 
     --border: 260 15% 25%;
     --input: 260 15% 25%;
-    --ring: 260 40% 50%;
+    --ring: 240 98% 21%;
 
     --radius: 0.5rem;
   }
@@ -47,8 +47,8 @@
   }
 
   body {
-    @apply bg-violet-dark text-foreground font-sans;
-    background: linear-gradient(135deg, #1A1F2C 0%, #292642 100%);
+    @apply bg-navy-dark text-foreground font-sans;
+    background: linear-gradient(135deg, #030468 0%, #040887 100%);
     background-attachment: fixed;
   }
 }
@@ -60,22 +60,22 @@
   
   .section-title {
     @apply text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white relative
-      before:absolute before:bottom-0 before:left-0 before:w-16 before:h-1 before:bg-violet-accent;
+      before:absolute before:bottom-0 before:left-0 before:w-16 before:h-1 before:bg-navy-accent;
   }
   
   .nav-link {
     @apply relative px-3 py-2 text-white/70 hover:text-white transition-colors duration-300
-      after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-violet-accent
+      after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-navy-accent
       after:transition-all after:duration-300 hover:after:w-full;
   }
   
   .timeline-item {
-    @apply relative pl-8 pb-10 border-l border-violet-light/30 last:border-0 last:pb-0;
+    @apply relative pl-8 pb-10 border-l border-navy-light/30 last:border-0 last:pb-0;
   }
   
   .timeline-dot {
-    @apply absolute -left-[9px] top-1 w-[18px] h-[18px] rounded-full bg-violet-accent 
-      shadow-[0_0_10px_rgba(155,135,245,0.5)] flex items-center justify-center;
+    @apply absolute -left-[9px] top-1 w-[18px] h-[18px] rounded-full bg-navy-accent 
+      shadow-[0_0_10px_rgba(7,11,222,0.5)] flex items-center justify-center;
   }
   
   .timeline-dot::before {
@@ -84,16 +84,16 @@
   }
   
   .skill-bar {
-    @apply relative h-2 rounded-full overflow-hidden bg-violet-medium/50;
+    @apply relative h-2 rounded-full overflow-hidden bg-navy-medium/50;
   }
   
   .skill-progress {
-    @apply absolute top-0 left-0 h-full bg-gradient-to-r from-violet-accent to-violet-light rounded-full;
+    @apply absolute top-0 left-0 h-full bg-gradient-to-r from-navy-accent to-navy-highlight rounded-full;
   }
   
   .social-link {
     @apply flex items-center justify-center w-12 h-12 rounded-full
-      bg-violet-medium/30 text-white hover:bg-violet-accent 
+      bg-navy-medium/30 text-white hover:bg-navy-accent 
       transition-all duration-300 hover:scale-110;
   }
 }
@@ -104,14 +104,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #1A1F2C;
+  background: #030468;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6E59A5;
+  background: #070bde;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9b87f5;
+  background: #2c30ff;
 }

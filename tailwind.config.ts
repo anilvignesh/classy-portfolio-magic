@@ -70,6 +70,13 @@ export default {
                     light: '#6E59A5',
                     accent: '#9b87f5',
                     highlight: '#D6BCFA'
+                },
+                navy: {
+                    dark: '#030468',
+                    medium: '#040887',
+                    light: '#0508a8',
+                    accent: '#070bde',
+                    highlight: '#2c30ff'
                 }
 			},
 			borderRadius: {
@@ -145,6 +152,7 @@ export default {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
                 'gradient-violet': 'linear-gradient(90deg, #1A1F2C 0%, #403E43 50%, #1A1F2C 100%)',
                 'gradient-purple': 'linear-gradient(135deg, #6E59A5 0%, #9b87f5 100%)',
+                'gradient-navy': 'linear-gradient(135deg, #030468 0%, #070bde 100%)',
                 'hero-pattern': 'url("/hero-bg.svg")',
             }
 		}

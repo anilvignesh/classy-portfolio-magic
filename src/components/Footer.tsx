@@ -3,7 +3,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="py-8 bg-violet-dark border-t border-violet-accent/20">
+    <footer className="py-8 bg-navy-dark border-t border-navy-accent/20">
       <div className="container mx-auto px-4 text-center">
         <p className="text-white/60 text-sm">
           © {currentYear} Anil Vignesh. All rights reserved.
