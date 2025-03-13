@@ -1,6 +1,7 @@
 
 import { useEffect, useRef } from 'react';
 import { User, MapPin, Mail, Phone, Globe, Linkedin } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -36,10 +37,17 @@ const About = () => {
           <div className="md:col-span-1">
             <div className="glass-card p-6 h-full">
               <div className="flex flex-col items-center">
-                <div className="w-40 h-40 rounded-full mb-4 bg-gradient-to-br from-violet-light to-violet-accent 
-                  flex items-center justify-center text-4xl font-bold text-white">
-                  AV
-                </div>
+                <Avatar className="w-40 h-40 rounded-full mb-4 border-2 border-violet-accent/40">
+                  <AvatarImage 
+                    src="/lovable-uploads/368f8fef-b893-412b-ad21-4fa97bf7e660.png" 
+                    alt="Anil Vignesh" 
+                    className="object-cover"
+                  />
+                  <AvatarFallback className="bg-gradient-to-br from-violet-light to-violet-accent 
+                    flex items-center justify-center text-4xl font-bold text-white">
+                    AV
+                  </AvatarFallback>
+                </Avatar>
                 <h3 className="text-xl font-semibold mb-2">Anil Vignesh</h3>
                 <p className="text-violet-highlight/70 text-sm mb-4">Fintech Product Manager</p>
                 
