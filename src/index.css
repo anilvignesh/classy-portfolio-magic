@@ -105,6 +105,14 @@
   .hero-button {
     @apply px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-violet-light focus:ring-opacity-50;
   }
+  
+  .testimonial-card {
+    @apply glass-card p-6 relative overflow-hidden;
+  }
+  
+  .testimonial-quote {
+    @apply absolute opacity-5 text-violet-accent -right-4 -bottom-4 transform rotate-12;
+  }
 }
 
 /* Custom scrollbar */
