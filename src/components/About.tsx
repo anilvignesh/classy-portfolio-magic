@@ -119,7 +119,7 @@ const About = () => {
               </p>
               
               <p className="text-white/80 mb-6 leading-relaxed">
-                His strengths lie in taking responsibility,listening, and evolving based on feedback. 
+                His strengths lie in taking responsibility, listening, and evolving based on feedback. 
                 With a solid technical foundation, Anil effectively bridges <span className="text-violet-accent font-medium">business</span> and 
                 <span className="text-violet-accent font-medium"> technology</span>, delivering impactful solutions.
               </p>
