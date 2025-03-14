@@ -1,4 +1,3 @@
-
 import { useEffect, useRef, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 
@@ -64,11 +63,11 @@ const Hero = () => {
         this.baseY = this.y;
         this.density = Math.random() * 30 + 1;
         
-        // Generate a violet/purple color with transparency
-        const hue = 250 + Math.random() * 30; // 250-280 hue range (violet/purple)
+        // Generate a teal/seafoam color with transparency
+        const hue = 180 + Math.random() * 20; // 180-200 hue range (teal/seafoam)
         const saturation = 70 + Math.random() * 30; // 70-100% saturation
-        const lightness = 50 + Math.random() * 20; // 50-70% lightness
-        const alpha = 0.5 + Math.random() * 0.5; // 0.5-1.0 alpha
+        const lightness = 60 + Math.random() * 20; // 60-80% lightness
+        const alpha = 0.6 + Math.random() * 0.4; // 0.6-1.0 alpha
         
         this.color = `hsla(${hue}, ${saturation}%, ${lightness}%, ${alpha})`;
       }
@@ -144,7 +143,8 @@ const Hero = () => {
             opacityValue = 1 - (distance / 120);
             if (!ctx) continue;
             
-            ctx.strokeStyle = `rgba(155, 135, 245, ${opacityValue * 0.6})`;
+            // Use a teal color for connecting lines
+            ctx.strokeStyle = `rgba(142, 202, 230, ${opacityValue * 0.8})`;
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
