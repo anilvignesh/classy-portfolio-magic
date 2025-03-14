@@ -91,7 +91,7 @@ const Skills = () => {
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-1">
             <div className="glass-card p-6 h-full border border-violet-light/10 transition-all duration-300 hover:border-violet-light/30">
-              <h3 className="text-xl font-semibold text-white">Skill Categories</h3>
+              <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-white to-violet-highlight/90 bg-clip-text text-transparent">Skill Categories</h3>
               
               <div className="space-y-2 mt-6">
                 {skillCategories.map((category) => (
@@ -121,7 +121,7 @@ const Skills = () => {
           <div className="lg:col-span-2">
             <div className="glass-card p-6 h-full border border-violet-light/10 transition-all duration-300 hover:border-violet-light/30">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="text-xl font-semibold bg-gradient-to-r from-white via-white to-violet-300 bg-clip-text text-transparent">{selectedCategory?.name}</h3>
+                <h3 className="text-xl font-semibold text-white">{selectedCategory?.name}</h3>
                 <div className="px-3 py-1 rounded-full bg-violet-accent/20 border border-violet-accent/30 text-sm text-violet-highlight">
                   {selectedCategory?.skills.length} skills
                 </div>
