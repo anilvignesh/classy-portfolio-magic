@@ -100,7 +100,7 @@ const Testimonials = () => {
     <section 
       id="testimonials" 
       ref={sectionRef}
-      className="py-20 bg-violet-medium/10 backdrop-blur-sm opacity-0"
+      className="py-20 bg-teal-medium/10 backdrop-blur-sm opacity-0"
     >
       <div className="container mx-auto px-4">
         <h2 className="section-title">Testimonials</h2>
@@ -113,13 +113,13 @@ const Testimonials = () => {
           >
             <div className="flex flex-col md:flex-row gap-6">
               <div className="flex-shrink-0 flex justify-center md:justify-start">
-                <Avatar className="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-violet-accent/40">
+                <Avatar className="w-24 h-24 md:w-32 md:h-32 rounded-full border-2 border-teal-accent/40">
                   <AvatarImage 
                     src={testimonials[currentIndex].image} 
                     alt={testimonials[currentIndex].name} 
                     className="object-cover"
                   />
-                  <AvatarFallback className="bg-gradient-to-br from-violet-light to-violet-accent 
+                  <AvatarFallback className="bg-gradient-to-br from-teal-light to-teal-accent 
                     flex items-center justify-center text-xl font-bold text-white">
                     {testimonials[currentIndex].name.split(' ').map(n => n[0]).join('')}
                   </AvatarFallback>
@@ -128,13 +128,13 @@ const Testimonials = () => {
               
               <div className="flex-1">
                 <div className="mb-4">
-                  <Quote size={24} className="text-violet-accent/60 mb-2" />
+                  <Quote size={24} className="text-teal-accent/60 mb-2" />
                   <p className="text-white/80 italic leading-relaxed">{testimonials[currentIndex].content}</p>
                 </div>
                 
                 <div className="mt-6">
                   <h4 className="text-lg font-semibold text-white">{testimonials[currentIndex].name}</h4>
-                  <p className="text-violet-highlight/70">{testimonials[currentIndex].position}</p>
+                  <p className="text-seafoam-light/70">{testimonials[currentIndex].position}</p>
                   <p className="text-white/60 text-sm">{testimonials[currentIndex].company}</p>
                   <div className="flex items-center mt-2 text-xs text-white/50 gap-2">
                     <span>{testimonials[currentIndex].date}</span>
@@ -150,7 +150,7 @@ const Testimonials = () => {
             <div className="flex justify-center mt-8 gap-4">
               <button 
                 onClick={prevTestimonial}
-                className="p-2 rounded-full bg-violet-medium/30 hover:bg-violet-accent/60 
+                className="p-2 rounded-full bg-teal-medium/30 hover:bg-teal-accent/60 
                   transition-colors duration-300 text-white/80 hover:text-white"
                 aria-label="Previous testimonial"
               >
@@ -163,8 +163,8 @@ const Testimonials = () => {
                     onClick={() => setCurrentIndex(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 
                       ${currentIndex === index 
-                        ? 'bg-violet-accent scale-110' 
-                        : 'bg-violet-medium/40 hover:bg-violet-medium/80'}`
+                        ? 'bg-teal-accent scale-110' 
+                        : 'bg-teal-medium/40 hover:bg-teal-medium/80'}`
                     }
                     aria-label={`Go to testimonial ${index + 1}`}
                   />
@@ -172,7 +172,7 @@ const Testimonials = () => {
               </div>
               <button 
                 onClick={nextTestimonial}
-                className="p-2 rounded-full bg-violet-medium/30 hover:bg-violet-accent/60 
+                className="p-2 rounded-full bg-teal-medium/30 hover:bg-teal-accent/60 
                   transition-colors duration-300 text-white/80 hover:text-white"
                 aria-label="Next testimonial"
               >

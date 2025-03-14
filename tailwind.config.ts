@@ -63,22 +63,21 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-                // Enhanced color palette
-                violet: {
-                    dark: '#171923',  // Darker, more refined background
-                    medium: '#2D3748',
-                    light: '#805AD5',  // Brighter purple
-                    accent: '#6B46C1', // Richer accent color
-                    highlight: '#D6BCFA'
-                },
-                indigo: {
-                    light: '#A3BFFA',
-                    medium: '#5A67D8',
-                    dark: '#3C366B'
-                },
+                // Enhanced color palette for Teal/Green theme
                 teal: {
-                    light: '#4FD1C5',
-                    accent: '#319795'
+                    dark: '#023047',  // Darker teal background
+                    medium: '#219EBC',
+                    light: '#8ECAE6',  // Bright teal
+                    accent: '#8ECAE6' // Accent color
+                },
+                mint: {
+                    light: '#AFF0D9',
+                    medium: '#57CC99',
+                    dark: '#38A3A5'
+                },
+                seafoam: {
+                    light: '#E0FBFC',
+                    accent: '#80ED99'
                 }
 			},
 			borderRadius: {
@@ -140,10 +139,10 @@ export default {
                 },
                 'glow': {
                     '0%, 100%': {
-                        boxShadow: '0 0 15px rgba(139, 92, 246, 0.5)'
+                        boxShadow: '0 0 15px rgba(142, 202, 230, 0.5)'
                     },
                     '50%': {
-                        boxShadow: '0 0 30px rgba(139, 92, 246, 0.8)'
+                        boxShadow: '0 0 30px rgba(142, 202, 230, 0.8)'
                     }
                 }
 			},
@@ -161,8 +160,8 @@ export default {
             },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                'gradient-violet': 'linear-gradient(90deg, #171923 0%, #2D3748 50%, #171923 100%)',
-                'gradient-purple': 'linear-gradient(135deg, #805AD5 0%, #6B46C1 100%)',
+                'gradient-teal': 'linear-gradient(90deg, #023047 0%, #219EBC 50%, #023047 100%)',
+                'gradient-mint': 'linear-gradient(135deg, #8ECAE6 0%, #219EBC 100%)',
                 'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
                 'hero-pattern': 'url("/hero-bg.svg")',
             }
