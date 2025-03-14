@@ -63,13 +63,22 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-                // Custom colors for our portfolio
+                // Enhanced color palette
                 violet: {
-                    dark: '#1A1F2C',
-                    medium: '#403E43',
-                    light: '#6E59A5',
-                    accent: '#9b87f5',
+                    dark: '#171923',  // Darker, more refined background
+                    medium: '#2D3748',
+                    light: '#805AD5',  // Brighter purple
+                    accent: '#6B46C1', // Richer accent color
                     highlight: '#D6BCFA'
+                },
+                indigo: {
+                    light: '#A3BFFA',
+                    medium: '#5A67D8',
+                    dark: '#3C366B'
+                },
+                teal: {
+                    light: '#4FD1C5',
+                    accent: '#319795'
                 }
 			},
 			borderRadius: {
@@ -128,6 +137,14 @@ export default {
                     '50%': {
                         transform: 'translateY(-10px)'
                     }
+                },
+                'glow': {
+                    '0%, 100%': {
+                        boxShadow: '0 0 15px rgba(139, 92, 246, 0.5)'
+                    },
+                    '50%': {
+                        boxShadow: '0 0 30px rgba(139, 92, 246, 0.8)'
+                    }
                 }
 			},
 			animation: {
@@ -136,15 +153,17 @@ export default {
                 'fade-in-up': 'fade-in-up 0.8s ease-out forwards',
                 'fade-in': 'fade-in 0.8s ease-out forwards',
                 'pulse-slow': 'pulse-slow 4s ease-in-out infinite',
-                'float': 'float 5s ease-in-out infinite'
+                'float': 'float 5s ease-in-out infinite',
+                'glow': 'glow 3s ease-in-out infinite'
 			},
             fontFamily: {
                 sans: ['Poppins', 'sans-serif'],
             },
             backgroundImage: {
                 'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-                'gradient-violet': 'linear-gradient(90deg, #1A1F2C 0%, #403E43 50%, #1A1F2C 100%)',
-                'gradient-purple': 'linear-gradient(135deg, #6E59A5 0%, #9b87f5 100%)',
+                'gradient-violet': 'linear-gradient(90deg, #171923 0%, #2D3748 50%, #171923 100%)',
+                'gradient-purple': 'linear-gradient(135deg, #805AD5 0%, #6B46C1 100%)',
+                'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
                 'hero-pattern': 'url("/hero-bg.svg")',
             }
 		}

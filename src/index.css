@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 260 15% 15%;
+    --background: 260 20% 12%;
     --foreground: 0 0% 95%;
 
-    --card: 260 15% 12%;
+    --card: 260 20% 10%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 260 15% 12%;
+    --popover: 260 20% 10%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 255 70% 75%;
+    --primary: 263 70% 70%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 260 20% 25%;
     --secondary-foreground: 0 0% 95%;
 
-    --muted: 260 10% 25%;
+    --muted: 260 15% 25%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 265 70% 60%;
+    --accent: 267 76% 51%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 260 15% 25%;
-    --input: 260 15% 25%;
-    --ring: 260 40% 50%;
+    --border: 260 20% 25%;
+    --input: 260 20% 25%;
+    --ring: 263 70% 50%;
 
     --radius: 0.5rem;
   }
@@ -48,24 +48,25 @@
 
   body {
     @apply bg-violet-dark text-foreground font-sans;
-    background: linear-gradient(135deg, #1A1F2C 0%, #292642 100%);
+    background: linear-gradient(135deg, #171923 0%, #2D3748 100%);
     background-attachment: fixed;
   }
 }
 
 @layer components {
   .glass-card {
-    @apply backdrop-blur-md bg-white/5 border border-white/10 rounded-xl shadow-lg;
+    @apply backdrop-blur-md bg-white/5 border border-white/10 rounded-xl shadow-lg 
+           hover:shadow-xl transition-all duration-300;
   }
   
   .section-title {
-    @apply text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-white relative
-      before:absolute before:bottom-0 before:left-0 before:w-16 before:h-1 before:bg-violet-accent;
+    @apply text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-white relative
+      before:absolute before:bottom-0 before:left-0 before:w-16 before:h-1 before:bg-violet-light;
   }
   
   .nav-link {
-    @apply relative px-3 py-2 text-white/70 hover:text-white transition-colors duration-300
-      after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-violet-accent
+    @apply relative px-3 py-2 text-white/80 hover:text-white transition-colors duration-300
+      after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-violet-light
       after:transition-all after:duration-300 hover:after:w-full;
   }
   
@@ -75,7 +76,7 @@
   
   .timeline-dot {
     @apply absolute -left-[9px] top-1 w-[18px] h-[18px] rounded-full bg-violet-accent 
-      shadow-[0_0_10px_rgba(155,135,245,0.5)] flex items-center justify-center;
+      shadow-[0_0_10px_rgba(107,70,193,0.5)] flex items-center justify-center;
   }
   
   .timeline-dot::before {
@@ -88,30 +89,38 @@
   }
   
   .skill-progress {
-    @apply absolute top-0 left-0 h-full bg-gradient-to-r from-violet-accent to-violet-light rounded-full;
+    @apply absolute top-0 left-0 h-full bg-gradient-to-r from-indigo-medium to-violet-light rounded-full;
   }
   
   .social-link {
     @apply flex items-center justify-center w-12 h-12 rounded-full
-      bg-violet-medium/30 text-white hover:bg-violet-accent 
-      transition-all duration-300 hover:scale-110;
+      bg-violet-medium/30 text-white hover:bg-violet-accent hover:scale-110
+      transition-all duration-300 animate-glow;
+  }
+
+  .accent-gradient-text {
+    @apply bg-gradient-to-r from-indigo-light via-violet-light to-indigo-light bg-clip-text text-transparent;
+  }
+  
+  .hero-button {
+    @apply px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-violet-light focus:ring-opacity-50;
   }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1A1F2C;
+  background: #171923;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6E59A5;
+  background: #6B46C1;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9b87f5;
+  background: #805AD5;
 }
