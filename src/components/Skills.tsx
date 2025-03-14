@@ -8,11 +8,11 @@ const skillCategories = [
     id: 1,
     name: 'Product Management',
     skills: [
-      { name: 'Agile methodologies', level: 90 },
+      { name: 'Agile methodologies', level: 70 },
       { name: 'Cross Functional Team Leadership', level: 85 },
-      { name: 'Customer Interviews', level: 80 },
-      { name: 'Product Strategy', level: 85 },
-      { name: 'Roadmap Planning', level: 90 },
+      { name: 'Customer Interviews', level: 72 },
+      { name: 'Product Strategy', level: 70 },
+      { name: 'Roadmap Planning', level: 60 },
     ]
   },
   {
@@ -23,18 +23,18 @@ const skillCategories = [
       { name: 'Scripting', level: 75 },
       { name: 'Python', level: 70 },
       { name: 'R', level: 65 },
-      { name: 'SQL', level: 80 },
+      { name: 'SQL', level: 75 },
     ]
   },
   {
     id: 3,
     name: 'Tools',
     skills: [
-      { name: 'Click Up', level: 90 },
-      { name: 'Mixpanel', level: 85 },
+      { name: 'Click Up', level: 80 },
+      { name: 'Mixpanel', level: 70 },
       { name: 'OpenReplay', level: 80 },
-      { name: 'Miro', level: 95 },
-      { name: 'Bolt.New', level: 85 },
+      { name: 'Miro', level: 80 },
+      { name: 'Bolt.New', level: 70 },
       { name: 'Fyno', level: 75 },
     ]
   },
@@ -43,7 +43,7 @@ const skillCategories = [
     name: 'Soft Skills',
     skills: [
       { name: 'Problem-solving', level: 95 },
-      { name: 'Communication', level: 90 },
+      { name: 'Communication', level: 80 },
       { name: 'Stakeholder Management', level: 85 },
       { name: 'Vendor Management', level: 80 },
       { name: 'Team Leadership', level: 90 },
@@ -121,7 +121,7 @@ const Skills = () => {
           <div className="lg:col-span-2">
             <div className="glass-card p-6 h-full border border-violet-light/10 transition-all duration-300 hover:border-violet-light/30">
               <div className="flex items-center justify-between mb-6">
-                <h3 className="text-xl font-semibold bg-gradient-to-r from-white to-violet-highlight/90 bg-clip-text text-transparent">{selectedCategory?.name}</h3>
+                <h3 className="text-xl font-semibold bg-gradient-to-r from-white via-white to-violet-300 bg-clip-text text-transparent">{selectedCategory?.name}</h3>
                 <div className="px-3 py-1 rounded-full bg-violet-accent/20 border border-violet-accent/30 text-sm text-violet-highlight">
                   {selectedCategory?.skills.length} skills
                 </div>
