@@ -91,7 +91,7 @@ const Skills = () => {
         <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
           <div className="lg:col-span-1">
             <div className="glass-card p-6 h-full border border-violet-light/10 transition-all duration-300 hover:border-violet-light/30">
-              <h3 className="text-xl font-semibold mb-4 bg-gradient-to-r from-white to-violet-highlight/90 bg-clip-text text-transparent">Skill Categories</h3>
+              <h3 className="text-xl font-semibold text-white">Skill Categories</h3>
               
               <div className="space-y-2 mt-6">
                 {skillCategories.map((category) => (
