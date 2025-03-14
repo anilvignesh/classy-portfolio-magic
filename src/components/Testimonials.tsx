@@ -20,7 +20,7 @@ const testimonials: TestimonialType[] = [
     content: "This is the person who has become for me an ideal in taking ownership. Vignesh expertly filled the Assistant Data Scientist and Data Analyst roles in my data science team for about four years. I was impressed by Vignesh's ability to take ownership of projects and drive it forward with urgency. His natural skill of questioning the status quo has helped us drive process improvements throughout our journey. Vignesh was happy to take initiatives and we miss him volunteering at the fun-at-work gatherings. Thanks a lot, man! Vignesh would become an appreciated member of any team.",
     name: "Deepu Mathew",
     position: "Delivery Manager for Data, Reporting and Analytics",
-    company: "Nielsen Media",
+    company: "Air India",
     relationship: "Direct Manager",
     date: "March 11, 2022",
     image: "/lovable-uploads/ce85b855-e219-4584-93df-c7cada117d1f.png"
