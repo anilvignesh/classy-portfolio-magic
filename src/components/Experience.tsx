@@ -10,12 +10,13 @@ const experiences = [
     location: 'Bangalore, India',
     period: 'March 2022 - Current',
     achievements: [
-      'Led a cross-functional team of 12 to deliver key features for cross-border payments and financing.',
-      'Successfully led and contributed to product lines responsible for over $100 million in transactions, showcasing the scalability and market impact of the products.',
-      'Spearheaded the launch of the latest product, achieving $50,000 in transaction volume within 3 months of launch, with strong growth potential.',
-      'Led the rapid development and launch of ZimplyTrade, a B2B e-commerce platform built using Bolt.New, delivering a fully functional prototype in just 3 days.',
-      'Streamlined customer onboarding, reducing TAT by 80% through integration of KYC APIs and guided inputs.',
-      'Reduced operational costs by 60% by identifying and integrating new vendors for SMS delivery and KYC APIs.'
+      'Defined core KYC and AML policies for PMCB compliance; leading import payments platform development for PSFs and marketplaces.',
+      'Launched PMCB export payments solution, reaching $500K+ in transactions within 3 months.',
+      'Streamlined customer onboarding using KYC APIs, reducing turnaround time by 60%.',
+      'Designed regularization module for current accounts; cutting operations workload by 60%.',
+      'Built internal dashboard (Mixpanel, Metabase) reducing feature iteration time by 25%.',
+      'Led product development cross-functionally with Engineering, Design, Operations, Sales, and Marketing teams.',
+      'Conducted 100+ customer interviews and demos, driving product-market fit and managing scalation.'
     ]
   },
   {
@@ -25,10 +26,10 @@ const experiences = [
     location: 'Kochi, India',
     period: 'June 2018 - March 2022',
     achievements: [
-      'Deployed advanced machine learning models to optimize TV media investments, delivering a 20% uplift in ROI.',
-      'Enhanced model robustness by 30% through a VIF-driven feature selection pipeline, reducing prediction errors by 25%.',
-      'Built a smart TV attribution workflow using R, Shell scripts, and Jenkins, cutting TAT by 40%.',
-      'Led the EDA for the Nielsen Identity Engine, identifying critical data anomalies and elevating reporting accuracy.'
+      'Deployed ML models to optimize TV media investments, achieving 20% ROI uplift for client.',
+      'Improved model robustness by 30% and reduced prediction errors by 25% using VIF feature selection.',
+      'Developed smart TV attribution workflow with R, Shell scripts, and Jenkins, cutting turnaround time by 40%.',
+      'Led exploratory data analysis for Nielsen Identity Engine, identifying anomalies that boosted reporting accuracy.'
     ]
   },
   {
@@ -38,8 +39,8 @@ const experiences = [
     location: 'Trivandrum, India',
     period: 'May 2017 - December 2017',
     achievements: [
-      'Built backend infrastructure for the Patient Forms Module using .NET, processing 1,000+ forms monthly.',
-      'Transitioned into frontend development with AngularJS, earning commendation for teamwork and performance.'
+      'Built backend infrastructure for Patient Forms Module using .NET, processing 1,000+ forms monthly.',
+      'Transitioned to frontend development with AngularJS, earning recognition for teamwork.'
     ]
   }
 ];

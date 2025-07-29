@@ -113,15 +113,17 @@ const About = () => {
               </h3>
               
               <p className="text-white/80 mb-4 leading-relaxed">
-                Anil Vignesh is a Fintech Product Manager with nearly 8 years of experience, transitioning from 5 years 
-                in development and data science. An entrepreneur at heart, he excels in <span className="text-violet-accent font-medium">ownership</span>, 
-                <span className="text-violet-accent font-medium"> adaptability</span>, and <span className="text-violet-accent font-medium">continuous improvement</span>.
+                Product Manager with <span className="text-violet-accent font-medium">7+ years of technical experience</span> and formal training from Boston University. 
+                Since 2022, leading <span className="text-violet-accent font-medium">B2B SaaS products at scale</span> with expertise in API integrations, 
+                data-driven decision making, and cross-functional collaboration to drive measurable business growth.
               </p>
               
               <p className="text-white/80 mb-6 leading-relaxed">
-                His strengths lie in taking responsibility, listening, and evolving based on feedback. 
-                With a solid technical foundation, Anil effectively bridges <span className="text-violet-accent font-medium">business</span> and 
-                <span className="text-violet-accent font-medium"> technology</span>, delivering impactful solutions.
+                An entrepreneur at heart, Anil excels in <span className="text-violet-accent font-medium">ownership</span>, 
+                <span className="text-violet-accent font-medium">adaptability</span>, and <span className="text-violet-accent font-medium">continuous improvement</span>. 
+                With a solid technical foundation spanning development and data science, he effectively bridges 
+                <span className="text-violet-accent font-medium">business</span> and <span className="text-violet-accent font-medium">technology</span>, 
+                delivering impactful solutions that drive measurable results.
               </p>
               
               <h3 className="text-xl font-semibold mb-4">Education</h3>
@@ -130,6 +132,8 @@ const About = () => {
                   <div>
                     <h4 className="font-medium">Govt. Model Engineering College</h4>
                     <p className="text-violet-highlight/70 text-sm mt-1">B.Tech in Computer Science & Engineering</p>
+                    <p className="text-white/60 text-xs mt-1">IEEE Student Branch Chairman</p>
+                    <p className="text-white/60 text-xs">Volunteered teaching Mathematics to underprivileged children</p>
                   </div>
                   <div className="text-sm text-white/60">
                     June 2013 - May 2017
@@ -137,10 +141,30 @@ const About = () => {
                 </div>
               </div>
               
+              <h4 className="text-lg font-semibold mb-3 mt-4">Certifications</h4>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <span className="text-white/80">Product Management - Boston University</span>
+                  <span className="text-white/60">2022</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-white/80">Digital Innovation & Experimentation - Boston University</span>
+                  <span className="text-white/60">2021</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-white/80">Platform Strategy for Business - Boston University</span>
+                  <span className="text-white/60">2021</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-white/80">MySQL & Tableau - Udemy</span>
+                  <span className="text-white/60">2020</span>
+                </div>
+              </div>
+              
               <div className="mt-auto pt-6">
                 <h3 className="text-lg font-semibold mb-3">Key Strengths:</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Ownership', 'Adaptability', 'Problem-solving', 'Communication', 'Stakeholder Management'].map((skill) => (
+                  {['Cross-Functional Leadership', 'Problem-Solving', 'Stakeholder Management', 'Customer-Centric Strategy', 'Data-Driven Decision Making'].map((skill) => (
                     <span 
                       key={skill}
                       className="px-3 py-1 bg-violet-medium/40 rounded-full text-sm text-white/90"

@@ -8,45 +8,57 @@ const skillCategories = [
     id: 1,
     name: 'Product Management',
     skills: [
-      { name: 'Agile methodologies', level: 70 },
-      { name: 'Cross Functional Team Leadership', level: 85 },
-      { name: 'Customer Interviews', level: 72 },
-      { name: 'Product Strategy', level: 70 },
-      { name: 'Roadmap Planning', level: 60 },
+      { name: 'Product Lifecycle', level: 90 },
+      { name: 'Product Analytics', level: 85 },
+      { name: 'User Feedback Integration', level: 80 },
+      { name: 'Agile Methodologies', level: 85 },
+      { name: 'Strategic Roadmapping', level: 80 },
     ]
   },
   {
     id: 2,
-    name: 'Technical Skills',
+    name: 'Fintech & SaaS',
     skills: [
-      { name: 'Prompting', level: 85 },
-      { name: 'Scripting', level: 75 },
-      { name: 'Python', level: 70 },
-      { name: 'R', level: 65 },
-      { name: 'SQL', level: 75 },
+      { name: 'B2B/B2C SaaS', level: 90 },
+      { name: 'Cloud Technologies', level: 80 },
+      { name: 'Scalable Product Design', level: 85 },
+      { name: 'Rapid Experimentation', level: 80 },
+      { name: 'API Integrations', level: 85 },
     ]
   },
   {
     id: 3,
-    name: 'Tools',
+    name: 'Technical Skills',
     skills: [
-      { name: 'Click Up', level: 80 },
-      { name: 'Mixpanel', level: 70 },
-      { name: 'OpenReplay', level: 80 },
-      { name: 'Miro', level: 80 },
-      { name: 'Bolt.New', level: 70 },
-      { name: 'Fyno', level: 75 },
+      { name: 'Python', level: 80 },
+      { name: 'R', level: 75 },
+      { name: 'SQL', level: 85 },
+      { name: 'Scripting', level: 80 },
+      { name: 'Data Science', level: 75 },
     ]
   },
   {
     id: 4,
+    name: 'Tools',
+    skills: [
+      { name: 'Click Up', level: 90 },
+      { name: 'Mixpanel', level: 85 },
+      { name: 'OpenReplay', level: 80 },
+      { name: 'Miro', level: 85 },
+      { name: 'Bolt New', level: 80 },
+      { name: 'Fyno', level: 80 },
+      { name: 'Metabase', level: 75 },
+    ]
+  },
+  {
+    id: 5,
     name: 'Soft Skills',
     skills: [
-      { name: 'Problem-solving', level: 95 },
-      { name: 'Communication', level: 80 },
-      { name: 'Stakeholder Management', level: 85 },
-      { name: 'Vendor Management', level: 80 },
-      { name: 'Team Leadership', level: 90 },
+      { name: 'Cross-Functional Leadership', level: 95 },
+      { name: 'Problem-Solving', level: 90 },
+      { name: 'Stakeholder Management', level: 90 },
+      { name: 'Customer-Centric Strategy', level: 85 },
+      { name: 'Data-Driven Decision Making', level: 90 },
     ]
   }
 ];
