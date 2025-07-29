@@ -168,31 +168,6 @@ const Skills = () => {
                   ))}
                 </div>
               </ScrollArea>
-              
-              <div className="mt-6 pt-4 border-t border-violet-light/10">
-                <Tabs defaultValue="mastery" className="w-full">
-                  <TabsList className="grid w-full grid-cols-3 bg-violet-medium/20">
-                    <TabsTrigger value="mastery" className="data-[state=active]:bg-violet-accent data-[state=active]:text-white">
-                      Mastery
-                    </TabsTrigger>
-                    <TabsTrigger value="learning" className="data-[state=active]:bg-violet-accent data-[state=active]:text-white">
-                      Learning
-                    </TabsTrigger>
-                    <TabsTrigger value="interested" className="data-[state=active]:bg-violet-accent data-[state=active]:text-white">
-                      Interested
-                    </TabsTrigger>
-                  </TabsList>
-                  <TabsContent value="mastery" className="p-4 mt-2 rounded-md bg-violet-medium/10">
-                    <p className="text-white/80">Skills I've mastered through years of professional experience and consistent application.</p>
-                  </TabsContent>
-                  <TabsContent value="learning" className="p-4 mt-2 rounded-md bg-violet-medium/10">
-                    <p className="text-white/80">Currently expanding my expertise in Product Management and AI tooling.</p>
-                  </TabsContent>
-                  <TabsContent value="interested" className="p-4 mt-2 rounded-md bg-violet-medium/10">
-                    <p className="text-white/80">Exploring opportunities in AI product development and financial technology innovation.</p>
-                  </TabsContent>
-                </Tabs>
-              </div>
             </div>
           </div>
         </div>
