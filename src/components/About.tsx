@@ -174,6 +174,27 @@ const About = () => {
                   ))}
                 </div>
               </div>
+              
+              <h4 className="text-lg font-semibold mb-3 mt-6">Interests & Community</h4>
+              <div className="glass-card bg-white/5 p-4 rounded-lg">
+                <div className="flex items-start justify-between mb-2">
+                  <div>
+                    <h5 className="font-medium text-white">Google Local Guide - Level 7</h5>
+                    <p className="text-violet-highlight/70 text-sm mt-1">Food Enthusiast & Restaurant Reviewer</p>
+                    <p className="text-white/70 text-sm mt-2">
+                      Passionate about food trotting and sharing detailed restaurant reviews to help the community make informed dining choices.
+                    </p>
+                  </div>
+                  <a 
+                    href="https://www.google.com/maps/contrib/101181281145985004131/reviews/@12.1287422,76.1241865,436537m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-violet-accent hover:text-violet-light text-sm transition-colors"
+                  >
+                    View Reviews →
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
